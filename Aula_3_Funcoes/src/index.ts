@@ -2,6 +2,8 @@
 function adicionar(x:number, y:number) {
     return x + y;
 }
+let resultado = adicionar(2,5)
+console.log(adicionar(2,5), resultado)
 
 // funcao anonima
 let add = function(x:number, y:number) { return (x + y); }
@@ -32,7 +34,7 @@ function nome(primeiro: string, ultimo?: string): string {
     }
 }
 
-nome('José', 'Silva'); // retorna 'José Silva'
+console.log(nome('José', 'Silva')); // retorna 'José Silva'
 nome('José'); // retorna 'José'
 
 function inicializar(valor: number = 0) : number {
@@ -100,7 +102,35 @@ switch(expression) {
 } 
 
 */
+function calculadora(numero1: number, numero2: number): number (operacao: string[]): string{
+    switch(calculadora) { 
+        case "soma": { 
+           return numero1 + numero2;
+           break; 
+        } 
+        case "subtracao": { 
+            return numero1 - numero2;
+           break; 
+        } 
+        case "divisao": { 
+            return numero1 / numero2;
+            break; 
+         } 
+        case "multiplicacao": { 
+            return numero1 * numero2;
+            break; 
+         } 
+        default: { 
+            console.log("FOdeu")
+           break; 
+        } 
+     } 
+}
 
+console.log(calculadora(5, 3, "soma")); // Saída esperada: 8
+console.log(calculadora(10, 2, "subtracao")); // Saída esperada: 8
+console.log(calculadora(4, 5, "multiplicacao")); // Saída esperada: 20
+console.log(calculadora(10, 2, "divisao")); // Saída esperada: 5
 
 /*
 Exercício 2: Verificador de Palíndromo

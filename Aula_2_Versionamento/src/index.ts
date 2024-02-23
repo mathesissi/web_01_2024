@@ -29,7 +29,38 @@ Vamos criar variáveis e objetos para representar diferentes tipos de dados rela
 
 */
 
+/* let usuario:{
+    nome: "Matheus",
+    sobrenome: "Silva",
+    idade: 19,
+    contato: {
+        email: "dasilvasantosmatheus504@gmail.com",
+        telefone:"15997448945",
+    }
+}
+ type Contato = {
+    email: string,
+    telefone:string,
+ }
 
+ type Pessoa = {
+    nome: string,
+    sobrenome: string,
+    idade: number,
+    contato: Contato,
+ }
+ 
+ let user: Pessoa;
+ user = {
+    nome: "Matheus",
+    sobrenome: "Silva",
+    idade: 19,
+    contato: {
+        email: "dasilvasantosmatheus504@gmail.com",
+        telefone:"15997448945",
+    }
+}
+console.log(usuario,user); */
 /*
 
 Exercício:
@@ -42,7 +73,19 @@ Precisamos armazenar informações sobre diferentes produtos disponíveis na loj
     preco: do tipo number, representando o preço do produto.
     disponivel: do tipo boolean, representando se o produto está disponível em estoque ou não.
 */
+// let produto: {
+//     nome: string,
+//     preco: number,
+//     estoque: number,
+//     categoria: string[]
+// }
 
+// produto ={
+//     nome: geladeira,
+//     preco: "2.299",
+//     estoque: number,
+//     categoria: string[]
+// }
 
 
 /*
