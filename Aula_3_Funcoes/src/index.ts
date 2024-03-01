@@ -25,3 +25,19 @@ function verificar (x: number){
     }
 }
 console.log("Exercicio 2: " + verificar(4));
+
+//Exercício 3
+//Implemente uma função que calcule a média aritmética de um array de números
+//e retorne o resultado. Utilize essa função para calcular a média de diferentes
+//conjuntos de números.
+function mediaAritmetica (...numeros:number[]){
+    let soma=0;
+    for(let i=0; i<numeros.length; i++){
+        soma = soma + numeros[i];
+    }
+    let resultado = 0;
+    resultado = soma/numeros.length;
+    return resultado;
+}
+console.log("exercicio 3:" + mediaAritmetica(10,3,5));
+

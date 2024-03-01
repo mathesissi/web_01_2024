@@ -30,10 +30,11 @@ console.log("Exercicio 2: " + verificar(4));
 //conjuntos de números.
 function mediaAritmetica(...numeros) {
     let soma = 0;
-    for (let i = 0; i > numeros.length; i++) {
-        soma = numeros[i];
+    for (let i = 0; i < numeros.length; i++) {
+        soma = soma + numeros[i];
     }
-    let resultado = soma / numeros.length;
+    let resultado = 0;
+    resultado = soma / numeros.length;
     return resultado;
 }
-console.log("exercicio 3:" + mediaAritmetica(1, 2, 3, 4, 5));
+console.log("exercicio 3:" + mediaAritmetica(10, 3, 5));
