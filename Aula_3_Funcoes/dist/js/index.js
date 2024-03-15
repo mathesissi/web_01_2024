@@ -105,8 +105,8 @@ function inverterP(frase) {
     }
     return resultado.trim();
 }
-console.log("exercicio 8: " + inverterP("Socorro Deus"));
-console.log("exercicio 8: " + inverterP("Odeio quando os codigos nao funcionam"));
+console.log("exercicio 8 (simplificado): " + inverterP("Socorro Deus"));
+console.log("exercicio 8 (simplificado): " + inverterP("Odeio quando os codigos nao funcionam"));
 // Exercício 9
 //  Implemente uma função que retorne a soma de todos os números pares em um 
 // array.
