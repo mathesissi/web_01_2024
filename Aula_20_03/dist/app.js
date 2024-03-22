@@ -11,8 +11,18 @@ app.use(express_1.default.json());
 function appLog() {
     console.log("A API se encontra no url: http://localhost:3000");
 }
+function getIdFromParameter(req, res) {
+    const userId = req.query.id;
+    res.status(200).json({ mensagem: 'Voce solicitou informacoes do usuario com o ID ${userId}' });
+}
+app.get('/api/user', getIdFromParameter);
+function getIdFromPath(req, res) {
+    const userId = req.params.id;
+    res.status(200).json({ mensagem: 'Voce solicitou informacoes do usuario com o ID ${userId}' });
+}
+app.get('/api/user/:id ', getIdFromPath);
 function hello(req, res) {
-    res.send("hello World");
+    res.status(201).json({ mensagem: "Hello World" });
 }
 app.get("/api/hello", hello);
 app.listen(PORT, appLog);
